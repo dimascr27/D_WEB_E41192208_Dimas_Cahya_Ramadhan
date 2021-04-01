@@ -9,7 +9,7 @@
         <p>Mata Pelajaran</p>
         <ul>
             @foreach($pelajaran as $p)
-            <il>{{ $p }}</il>
+            <li>{{ $p }}</li>
             @endforeach
     </div>
 @endsection
