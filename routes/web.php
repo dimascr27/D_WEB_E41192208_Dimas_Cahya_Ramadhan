@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('user', [ManagementUserController::class, 'index']);
 
 Route::resource('user', ManagementUserController::class);
+
+Route::get("/home", function(){
+    return view("home");
+});

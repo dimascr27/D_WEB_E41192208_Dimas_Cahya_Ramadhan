@@ -1,16 +1,15 @@
-@extends('layout.app')
-
+@extends('layouts.app')
 @section('content')
-    <div class="jumbotron jumbotron-fluide">
+    <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Home Page</h1>
-            <p class="lead"> This is the Home Page</p>
+            <p class="lead">This is the Home Page</p>
         </div>
-        <p>Nama :{{ $nama }}</p>
+        <p>Nama : {{ $nama }}</p>
         <p>Mata Pelajaran</p>
         <ul>
-            @foreach ($collection as $item)
-            <li>{{$p}}</li>    
+            @foreach($pelajaran as $p)
+            <il>{{ $p }}</il>
             @endforeach
-    </div>    
+    </div>
 @endsection
