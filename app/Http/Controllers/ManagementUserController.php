@@ -1,16 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\http\Controllers;
 
 use Illuminate\Http\Request;
 
 class ManagementUserController extends Controller
-{
-    public function index()
-    {
-      $nama = "Dimas Cahya Ramadhan";
-      $pelajaran = ["Algoritma & Pemrograman", "Kalkulus", "Pemrograman Web"];
-      return view('home', compact('nama','pelajaran'));
-    }
 
+{
+    public function index(){
+        return "Hai";
+    }
 }
